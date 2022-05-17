@@ -1,0 +1,9 @@
+export declare const Script: any;
+export declare const Link: any;
+export declare const Base: any;
+export declare const Title: any;
+export declare const Meta: any;
+export declare const Style: any;
+export declare const Head: any;
+export declare const Html: any;
+export declare const Body: any;
