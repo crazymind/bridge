@@ -11,7 +11,7 @@ const NUXT_NO_SSR = process.env.NUXT_NO_SSR
 const PAYLOAD_JS = '/payload.js'
 
 const getClientManifest = cachedImport(() => import('#build/dist/server/client.manifest.mjs'))
-const getSSRApp = !process.env.NUXT_NO_SSR && cachedImport(() => import('#build/dist/server/server.mjs'))
+const getSSRApp = () => {return false} // !process.env.NUXT_NO_SSR && cachedImport(() => import("#build/dist/server/server.mjs"));
 
 const getSSRRenderer = cachedResult(async () => {
   // Load client manifest
